@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="Untitled-1.css">
+    <link href="https://fonts.googleapis.com/css?family=Megrim&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="HZ2.0.0-framework.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <section class="main">
+        <section>
+          <video autoplay loop muted><source src="img/dark_v.mp4" type="video/mp4"></video>
+        </section>
+        
+        <a class="" href=""><img src="img/logo.png" alt=""></a>
+        
+        <section class="sec1 df jc-c">
+            <a href="atop/atop.html">about</a>
+            <a href="aright/aright.html">conatct</a>
+            <a href="abottom/abottom.html">strength</a>
+            <a href="aleft/aleft.html">portfolio</a>
+        </section>
+        
+    </section>
+</body>
+<script>
+    
+   $(function(){
+       $('.sec1>a:eq(1)').click(function(){
+           $(this).html('a:eq(0)').css('transform','translateX(-100%)')
+           $(this).html('a:eq(0)').css('transition','2s')
+       })
+           
+           
+           
+           
+//           if(i%2){
+//               $(this).css('transform','translateX(-100%)').delay(2000)
+//               $(this).css('left','-100%').delay(2000)
+//               $(this).css('transition','2s')
+//           }else{
+//               $(this).css('left','100%').delay(2000)
+//               $(this).css('transition','2s')
+//               $(this).css('transform','translateX(100%)').delay(2000)
+//           }
+           
+           
+           
+           
+//           $(this).index().css('transition','2s').fadeIn()
+//           $('.main').fadeOut(500)
+//           $('.main').eq($(this).index()).fadeIn(2000)
+//       })
+//   })
+   
+//    $(function(){
+//        $('.main>a:nth-of-type(2)').click(function(){
+//        $('.main>a:nth-of-type(2)').css('transform','translateX(100%)').delay(2000)
+//    })
+       
+   })
+</script>
+</html>

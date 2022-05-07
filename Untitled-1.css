@@ -1,0 +1,97 @@
+.main{
+    width: 100%;
+    height: 100vh;
+/*    height: auto;*/
+    position: relative
+}
+.main>section{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;left: 0;
+}
+.main>section>video{
+    width: 100%;height: 100%;
+    transform: scaleX(1.2);
+}
+.main>section::before{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;height: 100%;
+    top: 0;left: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+.main>section::after{
+    content: 'i"m miss_f_g';
+    display: block;
+    top: 50%;left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+     font-size: 12vw;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-family: 'Megrim', cursive !important;
+    color: palegreen;
+}
+
+.main>a{
+    position: absolute;
+    top: 40px;left: 40px;
+    z-index: 7;
+    animation: anim1 2s alternate infinite ;
+}
+@keyframes anim1{
+    100%{transform: rotateY(360deg)}
+}
+/*--------------------end back*/
+.sec1{
+/*    width: 100%;*/
+/*    height: 100%;*/
+    position: relative;
+/*    z-index: 3;*/
+}
+.sec1>a{
+    position: absolute;
+    font-size: 20px;
+    text-decoration: none;
+    color:white;
+    letter-spacing: 4px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+/*    z-index: 6;*/
+}
+.sec1>a:nth-of-type(4){
+    transform: rotateZ(-90deg);
+    top: 50%;left: 15px;
+}
+.sec1>a:nth-of-type(2){
+    transform: rotateZ(90deg);
+    top: 50%;right: 15px;
+}
+
+.sec1>a:nth-of-type(1){top: 30px;}
+.sec1>a:nth-of-type(3){bottom: 30px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
